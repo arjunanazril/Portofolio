@@ -1,0 +1,61 @@
+
+
+.drive-card {
+    text-align: center;
+    
+}
+
+
+  
+  .drive-icon {
+    font-size: 48px;
+    color: #4285f4;
+    margin-bottom: 15px;
+    
+  }
+  
+  .drive-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .drive-description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .drive-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(66, 133, 244, 0.3);
+    box-shadow: 0 15px 25px rgba(66, 133, 244, 0.2);
+    transform: translateY(-5px);
+    display: inline-block;
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 5px 15px rgba(66, 133, 244, 0.3);
+    transition: all 0.3s ease;
+    
+  }
+  
+  .drive-button:hover {
+    background: linear-gradient(135deg, #357ae8, #0f9d58);
+    background: linear-gradient(135deg, #357ae8, #0f9d58);
+      transform: translateY(-2px);
+      text-decoration: none;
+  }

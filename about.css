@@ -1,0 +1,12 @@
+.tombol {
+    position: relative;
+    left: 68px;
+    bottom: 10px;
+    border-radius: 6px;
+}
+
+.logo {
+    position: relative;
+    left: 30px;
+    top: 80px;
+}

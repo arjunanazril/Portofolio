@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #e68a00;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .gamb {
+    position: relative;
+    right: 270px;
+    bottom: 60px
+    
+  }
+
+  .icon {
+    position: relative;
+    left: 3px;
+  }
+
+  .iconI {
+    position: relative;
+    left: 11px;
+  }
+
+  .iconT {
+    position: relative;
+    left: 19px;
+  }
+
+.satu {
+    border-radius: 6px;
+}
+
+/* Mengatur gaya dasar untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Mengatur navigasi */
+.navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Menu utama */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    
+}
+
+/* Item menu */
+.menu li {
+    margin: 0 20px;
+}
+
+/* Tautan menu */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+}
+
+/* Efek animasi hover */
+.menu a:hover {
+    background-color: #f39c12;
+    color: #333;
+    transform: translateY(-5px);  /* Menambahkan efek angkat saat hover */
+}
+
+/* Menambahkan efek transisi saat muncul menu */
+.menu a {
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+}
+
+.menu a:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.menu a:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.menu a:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.menu a:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Animasi menu muncul */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dukung {
+    position: relative;
+    right: 5px
+}
+
+
+.section2 {
+    font-family: Arial, sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.card {
+    min-width: 300px;
+    max-width: 300px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card span {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.designer { background-color: #f8c2d1; }
+.developer { background-color: #b3e0ff; }
+.marketer { background-color: #ffdab3; }
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: background 0.3s, transform 0.3s, opacity 0.3s;
+}
+.nav-button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.shape-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.shape {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.shape:hover {
+  transform: translateY(-10px);
+}
+
+.shape iframe {
+  width: 100%;
+  height: 170px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.shape h3 {
+  margin: 15px 10px 5px;
+  color: #333;
+}
+
+.shape p {
+  padding: 0 15px 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+
+.section-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 50px;
+}
+
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 40px 0;
+}
+
+
