@@ -335,3 +335,8 @@ body {
   }
 }
 
+@mobile (max-width: 200px) {
+  body { flex-direction: column;
+    padding: 10px;
+  }  
+}
