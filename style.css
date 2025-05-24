@@ -339,8 +339,8 @@ body {
   }
 }
 
-@mobile (max-width: 200px) {
-  body { flex-direction: column;
-    padding: 10px;
-  }  
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 }
