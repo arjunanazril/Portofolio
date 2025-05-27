@@ -343,4 +343,11 @@ body {
   html {
     font-size: 55%;
   }
+    header {
+        @media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+    }
 }
