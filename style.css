@@ -89,7 +89,7 @@
   .gamb {
     position: relative;
     right: 270px;
-    bottom: 60px
+    bottom: 60px;
     display: flex;
   }
 
@@ -350,4 +350,53 @@ body {
   }
 }
     }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+}
+
+.sidebar .side-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar .side-menu li {
+  margin: 20px 0;
+}
+
+.sidebar .side-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .side-menu a:hover {
+  background-color: #444;
+}
+
+/* Hover zone on the left */
+.left-hover-zone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  z-index: 1001;
+}
+
+/* Hide top navbar when sidebar is visible */
+body.sidebar-active .navbar {
+  display: none;
 }
