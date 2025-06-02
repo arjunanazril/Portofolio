@@ -126,7 +126,6 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
-  table-layout: fixed;
 }
 
 /* Menu utama */
@@ -406,21 +405,21 @@ body.sidebar-active .navbar {
     flex-direction: column;
     padding: 10px;
   }
-  header {
-    @media (max-width: 450px) {
-      html {
-        font-size: 55%;
-      }
-    }
-  }
-  .navbar {
-    display: none;
-  }
 }
 
 @media (max-width: 450px) {
-  html {
-    font-size: 55%;
+  .menu span {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .menu a {
+    padding: 5px;
+    font-size: 22px; /* Bigger icons if needed */
   }
 }
-
