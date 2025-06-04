@@ -16,17 +16,4 @@ function moveSlide(step) {
   setTimeout(() => {
     buttons.forEach((button) => button.classList.remove("hidden"));
   }, 500);
-}
-
-const sidebar = document.querySelector(".sidebar");
-const hoverZone = document.querySelector(".left-hover-zone");
-
-hoverZone.addEventListener("mouseenter", () => {
-  sidebar.style.left = "0";
-  document.body.classList.add("sidebar-active");
-});
-
-sidebar.addEventListener("mouseleave", () => {
-  sidebar.style.left = "-200px";
-  document.body.classList.remove("sidebar-active");
-});
+};
