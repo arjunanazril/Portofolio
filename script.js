@@ -17,3 +17,14 @@ function moveSlide(step) {
     buttons.forEach((button) => button.classList.remove("hidden"));
   }, 500);
 };
+
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+
+hamburger.addEventListener("click", () => {
+  if (sidebar.style.left === "0px") {
+    sidebar.style.left = "-260px";
+  } else {
+    sidebar.style.left = "0px";
+  }
+});

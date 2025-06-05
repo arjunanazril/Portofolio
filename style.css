@@ -158,11 +158,7 @@ body {
 }
 
 /* Efek animasi hover */
-.menu a:hover {
-  background-color: #f39c12;
-  color: #333;
-  transform: translateY(-5px); /* Menambahkan efek angkat saat hover */
-}
+
 
 /* Menambahkan efek transisi saat muncul menu */
 .menu a {
@@ -424,3 +420,100 @@ body.sidebar-active .navbar {
     font-size: 22px; /* Bigger icons if needed */
   }
 }
+
+
+/* Navbar Utama */
+.navbar {
+  background-color: #111;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #00adb5;
+}
+
+/* Hamburger Button */
+.hamburger {
+  font-size: 24px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 250px;
+  height: 100%;
+  background-color: #222;
+  transition: left 0.3s ease;
+  z-index: 999;
+  padding-top: 60px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar ul li a:hover {
+  background-color: #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
